@@ -3,22 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Presentation Page</title>
+    <title>Portfolio web page</title>
+
+     <!-- Basic CSS Styling -->
+     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4faff;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        }
+
+        header, footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #005599;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 1rem 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 0.5rem 0 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        
+    }
+    a {
+        color: #0077b5;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    form button {
+        background-color: #0077b5;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    form button:hover {
+        background-color: #005f91;
+    }
+        img {
+            border-radius: 10px;
+        }
+    </style>
+    <!--end of styling-->
 </head>
 <body>
+      <!-- Header -->
     <header>
-        <h1>Welcome to My Presentation Page</h1>
+        <h1>Abood Jamal Portfolio</h1>
     </header>
     
-    <main>
-        <section>
-            <h2>Presentation</h2>
+     <!-- Navigation Bar -->
+     <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+  <!-- Main Content -->
+    <main >
+
+         <!-- About Section -->
+         <section id="about" style="background-color: #fdfdfd; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+            <h2  style="color: #003366; margin-bottom: 10px;">Presentation</h2>
             <p>Hi, my name is Abood jamal salim. I am passionate about web development and enjoy learning new technologies.</p>
         </section>
         
-        <section>
-            <h2>My Skills</h2>
-            <table border="1">
+         <!-- Skills Table -->
+         <section id="work" >
+            <h2 style="color: #003366; margin-bottom: 10px;">My Skills</h2>
+            <table>
                 <tr>
                     <th>Skill</th>
                     <th>Level</th>
@@ -37,45 +139,91 @@
                 </tr>
             </table>
         </section>
-        
-        <section>
+
+        <!-- Networks -->
+        <section id="resume">
             <h2>My Networks</h2>
-            <img src="kids.jpg" alt="Profile Image" width="150">
-            <p><a href="https://www.linkedin.com/" target="_blank">Connect with me on LinkedIn</a></p>
+            <img src="abood.jpeg" alt="Profile Image" width="150">
+            <p><a href="https://www.linkedin.com/in/abood-jamal-082700243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="
+                display: inline-block;
+                background-color: #0077B5;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 5px;
+                font-family: Arial, sans-serif;
+            ">Connect with me on LinkedIn</a></p>
         </section>
         
-        <section>
-            <h2>Hobbies</h2>
-            <ol>
-                <li>Reading</li>
-                <li>Coding</li>
-                <li>Traveling</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h2>Technologies I Know</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+         <!-- Hobbies List -->
+        <s<section style="margin-bottom: 2rem;">
+            <h2 style="color: #003366;">Hobbies</h2>
+            <ul style="list-style: none; padding: 0; display: flex; gap: 20px;">
+                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">
+                    📚 Reading
+                </li>
+                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">
+                    💻 Coding
+                </li>
+                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">
+                    ✈️ Traveling
+                </li>
             </ul>
         </section>
         
+        <!-- Technologies Section -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="color: #003366;">Technologies I Know</h2>
+            <ul style="list-style: none; padding: 0; display: flex; gap: 20px;">
+                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">
+                    🔤 HTML
+                </li>
+                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">
+                    🎨 CSS
+                </li>
+                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">
+                    ⚙️ JavaScript
+                </li>
+            </ul>
+        </section>
+
+        <!-- Media Section -->
         <section>
             <h2>Media</h2>
-            <audio controls>
-                <source src="audio.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ro90g6h5Pjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+        <!-- YouTube Video -->
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/Ro90g6h5Pjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <br>
+
+           <!-- Audio File -->
+       <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+   
         </section>
+
+         <!-- Contact Form -->
+         <section id="contact"  style="background-color: #fdfdfd; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" required><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required><br />
+
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" rows="5" required></textarea><br />
+
+                <button type="submit">Send</button>
+            </form>
     </main>
+    
     
     <footer>
         <p>&copy; 2025 My Presentation Page. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
