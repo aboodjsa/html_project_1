@@ -7,6 +7,7 @@
 
      <!-- Basic CSS Styling -->
      <style>
+           /* Set default font and background color for the page */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #f4faff;
@@ -14,27 +15,27 @@
         margin: 0;
         padding: 0;
         }
-
+ /* Style for header and footer sections */
         header, footer {
             background-color: #003366;
             color: white;
             text-align: center;
             padding: 1rem;
         }
-
+ /* Navigation bar styles */
         nav {
             background-color: #005599;
             padding: 0.5rem;
             text-align: center;
         }
-
+ /* Navigation links */
         nav a {
             color: white;
             margin: 0 1rem;
             text-decoration: none;
             font-weight: bold;
         }
-
+/* Main content padding */
         main {
             padding: 1rem 2rem;
         }
@@ -42,7 +43,7 @@
         section {
             margin-bottom: 2rem;
         }
-
+/* Table styling */
         table {
             border-collapse: collapse;
             width: 50%;
@@ -53,7 +54,7 @@
             padding: 8px;
             text-align: left;
         }
-
+ /* Form input styling */
         form input, form textarea {
             width: 100%;
             padding: 0.5rem;
@@ -68,6 +69,7 @@
         border-radius: 5px;
         
     }
+           /* Link styling */
     a {
         color: #0077b5;
     }
@@ -75,6 +77,7 @@
     a:hover {
         text-decoration: underline;
     }
+         /* Submit button styling */ 
     form button {
         background-color: #0077b5;
         color: white;
@@ -89,7 +92,7 @@
         background-color: #005f91;
     }
         img {
-            border-radius: 10px;
+            border-radius: 10px; /* Image styling */
         }
     </style>
     <!--end of styling-->
@@ -100,7 +103,7 @@
         <h1>Abood Jamal Portfolio</h1>
     </header>
     
-     <!-- Navigation Bar -->
+     <!-- Navigation Bar they are links using ID -->
      <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -111,13 +114,13 @@
   <!-- Main Content -->
     <main >
 
-         <!-- About Section -->
+        <!-- About / Presentation Section -->
          <section id="about" style="background-color: #fdfdfd; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem;">
             <h2  style="color: #003366; margin-bottom: 10px;">Presentation</h2>
             <p>Hi, my name is Abood jamal salim. I am passionate about web development and enjoy learning new technologies.</p>
         </section>
         
-         <!-- Skills Table -->
+          <!-- Skills Section with Table -->
          <section id="work" >
             <h2 style="color: #003366; margin-bottom: 10px;">My Skills</h2>
             <table>
@@ -140,10 +143,12 @@
             </table>
         </section>
 
-        <!-- Networks -->
+        <!-- Resume / Network Section -->
         <section id="resume">
             <h2>My Networks</h2>
-            <img src="abood.jpeg" alt="Profile Image" width="150">
+            <img src="abood.jpeg" alt="Profile Image" width="150"><!-- Profile image -->
+
+            <!-- LinkedIn Link Button -->
             <p><a href="https://www.linkedin.com/in/abood-jamal-082700243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="
                 display: inline-block;
                 background-color: #0077B5;
@@ -156,7 +161,7 @@
             ">Connect with me on LinkedIn</a></p>
         </section>
         
-         <!-- Hobbies List -->
+          <!-- Hobbies Section -->
         <s<section style="margin-bottom: 2rem;">
             <h2 style="color: #003366;">Hobbies</h2>
             <ul style="list-style: none; padding: 0; display: flex; gap: 20px;">
@@ -192,7 +197,7 @@
         <section>
             <h2>Media</h2>
        
-        <!-- YouTube Video -->
+       <!-- YouTube Video Embed -->
            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ro90g6h5Pjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            <br>
 
