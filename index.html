@@ -1,127 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This sets the character encoding to UTF-8, which supports most characters -->
     <meta charset="UTF-8">
+    <!-- Makes the website responsive to different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio web page</title>
 
-     <!-- Basic CSS Styling -->
-     <style>
-           /* Set default font and background color for the page */
+    <!-- Internal CSS Styling starts here -->
+    <style>
+        /* Sets the default font for the whole page and background color */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f4faff;
-        color: #333;
-        margin: 0;
-        padding: 0;
+            background-color: #f4faff;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
- /* Style for header and footer sections */
+
+        /* Styles for the header and footer - consistent background and padding */
         header, footer {
             background-color: #003366;
             color: white;
             text-align: center;
             padding: 1rem;
         }
- /* Navigation bar styles */
+
+        /* Navigation bar style - including background color and padding */
         nav {
             background-color: #005599;
             padding: 0.5rem;
             text-align: center;
         }
- /* Navigation links */
+
+        /* Styling each link in the navigation bar */
         nav a {
             color: white;
             margin: 0 1rem;
-            text-decoration: none;
+            text-decoration: none; /* removes underline */
             font-weight: bold;
         }
-/* Main content padding */
+
+        /* Main content area padding */
         main {
             padding: 1rem 2rem;
         }
 
+        /* Adds space below each section to avoid clutter */
         section {
             margin-bottom: 2rem;
         }
-/* Table styling */
+
+        /* Table styling - makes it easier to read and neater */
         table {
             border-collapse: collapse;
             width: 50%;
         }
 
+        /* Adds borders and padding to table cells */
         table, th, td {
             border: 1px solid #333;
             padding: 8px;
             text-align: left;
         }
- /* Form input styling */
+
+        /* Form input and textarea styling for better user experience */
         form input, form textarea {
             width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
+            padding: 10px;
+            margin: 0.5rem 0 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        form input, form textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 0.5rem 0 1rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        
-    }
-           /* Link styling */
-    a {
-        color: #0077b5;
-    }
+        /* Link color and hover effect */
+        a {
+            color: #0077b5;
+        }
 
-    a:hover {
-        text-decoration: underline;
-    }
-         /* Submit button styling */ 
-    form button {
-        background-color: #0077b5;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-    }
+        a:hover {
+            text-decoration: underline;
+        }
 
-    form button:hover {
-        background-color: #005f91;
-    }
+        /* Submit button design */
+        form button {
+            background-color: #0077b5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Darker shade on hover for better interactivity */
+        form button:hover {
+            background-color: #005f91;
+        }
+
+        /* Makes image corners slightly rounded */
         img {
-            border-radius: 10px; /* Image styling */
+            border-radius: 10px;
         }
     </style>
-    <!--end of styling-->
+    <!-- End of CSS Styling -->
 </head>
 <body>
-      <!-- Header -->
+    <!-- Header of the page containing the portfolio title -->
     <header>
         <h1>Abood Jamal Portfolio</h1>
     </header>
     
-     <!-- Navigation Bar they are links using ID -->
-     <nav>
+    <!-- Navigation bar - allows users to jump to specific sections using IDs -->
+    <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
     </nav>
-  <!-- Main Content -->
-    <main >
 
-        <!-- About / Presentation Section -->
-         <section id="about" style="background-color: #fdfdfd; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem;">
-            <h2  style="color: #003366; margin-bottom: 10px;">Presentation</h2>
-            <p>Hi, my name is Abood jamal salim. I am passionate about web development and enjoy learning new technologies.</p>
+    <!-- Main content of the page starts here -->
+    <main>
+        <!-- About section introducing the developer -->
+        <section id="about" style="background-color: #fdfdfd; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+            <h2 style="color: #003366; margin-bottom: 10px;">Presentation</h2>
+            <p>Hi, my name is Abood Jamal Salim. I am passionate about web development and enjoy learning new technologies.</p>
         </section>
         
-          <!-- Skills Section with Table -->
-         <section id="work" >
+        <!-- Skills section displayed in a table format -->
+        <section id="work">
             <h2 style="color: #003366; margin-bottom: 10px;">My Skills</h2>
             <table>
                 <tr>
@@ -143,90 +151,88 @@
             </table>
         </section>
 
-        <!-- Resume / Network Section -->
+        <!-- Resume / network section with profile image and LinkedIn link -->
         <section id="resume">
             <h2>My Networks</h2>
-            <img src="abood.jpeg" alt="Profile Image" width="150"><!-- Profile image -->
 
-            <!-- LinkedIn Link Button -->
-            <p><a href="https://www.linkedin.com/in/abood-jamal-082700243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="
-                display: inline-block;
-                background-color: #0077B5;
-                color: white;
-                padding: 10px 20px;
-                text-decoration: none;
-                font-weight: bold;
-                border-radius: 5px;
-                font-family: Arial, sans-serif;
-            ">Connect with me on LinkedIn</a></p>
+            <!-- Displays a profile image -->
+            <img src="abood.jpeg" alt="Profile Image" width="150">
+
+            <!-- LinkedIn profile link styled as a button -->
+            <p>
+                <a href="https://www.linkedin.com/in/abood-jamal-082700243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="
+                    display: inline-block;
+                    background-color: #0077B5;
+                    color: white;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    font-family: Arial, sans-serif;
+                ">Connect with me on LinkedIn</a>
+            </p>
         </section>
-        
-          <!-- Hobbies Section -->
-        <s<section style="margin-bottom: 2rem;">
+
+        <!-- Hobbies section using icons and styling for a modern look -->
+        <section style="margin-bottom: 2rem;">
             <h2 style="color: #003366;">Hobbies</h2>
             <ul style="list-style: none; padding: 0; display: flex; gap: 20px;">
-                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">
-                    📚 Reading
-                </li>
-                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">
-                    💻 Coding
-                </li>
-                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">
-                    ✈️ Traveling
-                </li>
+                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">📚 Reading</li>
+                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">💻 Coding</li>
+                <li style="background-color: #e0f0ff; padding: 10px 20px; border-radius: 10px;">✈️ Traveling</li>
             </ul>
         </section>
-        
-        <!-- Technologies Section -->
+
+        <!-- Section displaying known technologies using icons -->
         <section style="margin-bottom: 2rem;">
             <h2 style="color: #003366;">Technologies I Know</h2>
             <ul style="list-style: none; padding: 0; display: flex; gap: 20px;">
-                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">
-                    🔤 HTML
-                </li>
-                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">
-                    🎨 CSS
-                </li>
-                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">
-                    ⚙️ JavaScript
-                </li>
+                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">🔤 HTML</li>
+                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">🎨 CSS</li>
+                <li style="background-color: #d4f4dd; padding: 10px 20px; border-radius: 10px;">⚙️ JavaScript</li>
             </ul>
         </section>
 
-        <!-- Media Section -->
+        <!-- Multimedia section showing video and audio usage -->
         <section>
             <h2>Media</h2>
-       
-       <!-- YouTube Video Embed -->
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/Ro90g6h5Pjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <br>
 
-           <!-- Audio File -->
-       <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-   
+            <!-- Embedded YouTube video using iframe -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ro90g6h5Pjg" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br>
+
+            <!-- Audio control to play an mp3 file -->
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </section>
 
-         <!-- Contact Form -->
-         <section id="contact"  style="background-color: #fdfdfd; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+        <!-- Contact form section with inputs and submit button -->
+        <section id="contact" style="background-color: #fdfdfd; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem;">
             <h2>Contact Me</h2>
             <form>
+                <!-- Input for user's name -->
                 <label for="name">Name:</label><br />
                 <input type="text" id="name" name="name" required><br />
 
+                <!-- Input for user's email -->
                 <label for="email">Email:</label><br />
                 <input type="email" id="email" name="email" required><br />
 
+                <!-- Textarea for user's message -->
                 <label for="message">Message:</label><br />
                 <textarea id="message" name="message" rows="5" required></textarea><br />
 
+                <!-- Submit button -->
                 <button type="submit">Send</button>
             </form>
+        </section>
     </main>
-    
-    
+
+    <!-- Footer of the page -->
     <footer>
         <p>&copy; 2025 My Presentation Page. All rights reserved.</p>
     </footer>
